@@ -1,0 +1,240 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
+        <a class="navbar-brand" href="#">
+            <img src="https://www.bi-dss.com/wp-content/uploads/2019/06/favicon.png" alt="logo" style="width:45px;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li></li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Facultades<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Admisión<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Seguimiento">Seguimiento<span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+
+    
+    
+
+
+    <hr>
+    <div class="container bootstrap snippet">
+        <div class="row">
+            <div class="col-sm-10"><h1>Estudiante</h1></div>
+            <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Perfil</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Cuenta</strong></span> 2020-10-00002</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Facultad</strong></span> Ingeniería</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Periodo</strong></span> I-2020</li>
+
+                </ul>
+
+                
+
+
+                <ul class="list-group">
+                    <li class="list-group-item text-muted">Actividades Curriculares<i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Clases Aprobadas</strong></span> 12</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Clases Reprobadas</strong></span> 4</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Total Clases</strong></span> 62</li>
+                </ul>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Indice</div>
+                    <div class="panel-body">
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>CUM ACUMULADO</strong></span> 90%</li>
+                        <li class="list-group-item text-right"><span class="pull-left"><strong>UV DISPONIBLES</strong></span> 25</li>
+                    </div>
+                </div>
+
+            </div><!--/col-3-->
+            <div class="col-sm-9">
+
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="active"><a href="#home" data-toggle="tab">Disponibles</a></li>
+                    <li><a href="#home" data-toggle="tab">Aprobadas</a></li>
+                    <li><a href="#home" data-toggle="tab">Reprobadas</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Código</th>
+                                        <th>Nombre</th>
+                                        <th>UV</th>
+                                        <th>Seleccionar</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>GEN-0001</td>
+                                        <td>ESPAÑOL</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>GEN-0002</td>
+                                        <td>ÁLGEBRA</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>GEN-0003</td>
+                                        <td>SOCIOLOGÍA</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox" checked> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>GEN-0004</td>
+                                        <td>HISTORIA</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>GEN-0005</td>
+                                        <td>ECOLOGÍA</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>GEN-0006</td>
+                                        <td>FILOSOFÍA</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>MAT-0005</td>
+                                        <td>GEOMETRÍA</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox" checked> </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>8</td>
+                                        <td>ADMIN-0001</td>
+                                        <td>ADMINISTRACIÓN I</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox"> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>ADMIN-0003</td>
+                                        <td>ADMINISTRACIÓN II</td>
+                                        <td>4</td>
+                                        <td> <input type="checkbox" checked> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-sm-10"><h3>Clases Por Matricular</h3></div>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Código</th>
+                                        <th>Nombre</th>
+                                        <th>UV</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items">
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>GEN-0003</td>
+                                        <td>SOCIOLOGÍA</td>
+                                        <td>4</td>
+                                    </tr>
+                                    
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>MAT-0005</td>
+                                        <td>GEOMETRÍA</td>
+                                        <td>4</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td>ADMIN-0003</td>
+                                        <td>ADMINISTRACIÓN II</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4 text-center">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">MATRICULAR</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                    </div>
+                    
+                    
+
+                </div><!--/tab-pane-->
+            </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
+</body>
+</html>
