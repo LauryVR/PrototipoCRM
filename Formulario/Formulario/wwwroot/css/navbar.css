@@ -9,9 +9,9 @@
 }
 
 .navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
-    color: #16181b;
+    color: #9B2424;
     text-decoration: none;
-    background-color: #f8f9fa;
+    background-color: #9B2424;
 }
 
 @media (min-width: 767px) {
