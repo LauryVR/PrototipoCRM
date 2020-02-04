@@ -1,0 +1,179 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Seguimiento";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+
+</head>
+<body>
+    
+
+    <hr>
+    <div class="container bootstrap snippet">
+        <div class="row">
+            <div class="col-sm-10"><h1>Record Académico</h1></div>
+            <div class="col-sm-2"><a class="pull-right"><img title="Imprimir" src="https://image.flaticon.com/icons/svg/2432/2432596.svg" style="width:50px"></a></div>
+
+        </div>
+        <div><h3>Índice: 80%</h3></div>
+        
+        <div><h2> </h2></div>
+        <div><h2> </h2></div>
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+
+                <ul class="list-group">
+                    <li class="list-group-item " style="background-color:#F0B030; color:white ">Perfil</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Cuenta</strong></span> 2020-10-00002</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Facultad</strong></span> Ingeniería</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Periodo</strong></span> I-2020</li>
+
+                </ul>
+
+                <ul class="list-group">
+                    <li class="list-group-item " style="background-color:#F0B030; color:white ">Actividades Curriculares<i class="fa fa-dashboard fa-1x"></i></li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Clases Aprobadas</strong></span> 9</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Clases Reprobadas</strong></span> 1</li>
+                    <li class="list-group-item text-right"><span class="pull-left"><strong>Total Clases</strong></span> 10</li>
+                </ul>
+
+
+            </div>
+            <div class="col-sm-9">
+
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="active"><a href="#home" data-toggle="tab">Record Académico</a></li>
+                    <li><a href="#home" data-toggle="tab">Notas</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        <div class="table-responsive">
+                            <table class="table table-hover" class="text-center">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">#</th>
+                                        <th class="text-center">Materia</th>
+                                        <th class="text-center">U.V.</th>
+                                        <th class="text-center">Nota</th>
+                                        <th class="text-center">Estado</th>
+                                        <th class="text-center">Período</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items">
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td class="text-center">Filosofía</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">94%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">3/2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td class="text-center">Álgebra</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">90%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">3/2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td class="text-center">Sociología</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">80%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">3/2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">Historia</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">80%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">1/2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">Filosofía</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">98%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">1/2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td class="text-center">Ecología</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">89%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">1/2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7</td>
+                                        <td class="text-center">Geometría</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">79%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">2/2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">8</td>
+                                        <td class="text-center">Cálculo I</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">80%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">2/2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">9</td>
+                                        <td class="text-center">Cálculo II</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">83%</td>
+                                        <td class="text-center" style="color:green">APROBADA</td>
+                                        <td class="text-center">3/2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">10</td>
+                                        <td class="text-center">Geometría II</td>
+                                        <td class="text-center">4</td>
+                                        <td class="text-center">65%</td>
+                                        <td class="text-center" style="color:red">REPROBADA</td>
+                                        <td class="text-center">3/2019</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <hr>
+
+                        </div>
+
+                        <hr>
+
+                    </div>
+
+                </div><!--/tab-pane-->
+            </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
+</body>
+</html>
+
