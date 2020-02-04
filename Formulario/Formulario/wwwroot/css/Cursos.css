@@ -1,0 +1,170 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+    body * {
+        box-sizing: inherit;
+    }
+
+p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.text-black {
+    color: rgba(0,0,0,0.9);
+}
+
+.text-muted {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.ff-serif {
+    font-family: 'Lora', serif;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.lts-2px {
+    letter-spacing: 2px;
+    color: brown;
+}
+
+
+.w-full {
+    width: 100%;
+    height: 300px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.d-block {
+    display: compact;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.p-relative {
+    position: static;
+}
+
+
+.bg-white {
+    background-color: #fff;
+}
+
+.small {
+    font-size: 0.75rem;
+}
+
+.card-heading {
+    font-size: 2.25rem;
+}
+
+.styled-link {
+    text-decoration: none;
+    outline: none;
+    color: brown;
+    transition: all 0.25s ease-in;
+}
+
+
+.shadow-1 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+}
+
+.blue-hover {
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
+}
+
+    .blue-hover:hover {
+        transform: translateY(-5px);
+        border: none;
+        border-bottom: 5px solid #2196fe;
+        border-bottom-color: brown;
+    }
+
+
+
+.mx-auto {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

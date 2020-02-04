@@ -8,11 +8,11 @@ using Microsoft.Extensions.Logging;
 
 namespace Formulario.Pages
 {
-    public class PrivacyModel : PageModel
+    public class SegumientoModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<SegumientoModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public SegumientoModel(ILogger<SegumientoModel> logger)
         {
             _logger = logger;
         }

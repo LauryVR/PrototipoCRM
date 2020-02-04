@@ -6,19 +6,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace Formulario.Pages
+namespace Formulario
 {
-    public class RegistroModel : PageModel
+    public class CursosModel : PageModel
     {
-        private readonly ILogger<RegistroModel> _logger;
+        private readonly ILogger<CursosModel> _logger;
 
-        public RegistroModel(ILogger<RegistroModel> logger)
+        public CursosModel(ILogger<CursosModel> logger)
         {
             _logger = logger;
         }
 
         public void OnGet()
         {
+
         }
     }
 }
